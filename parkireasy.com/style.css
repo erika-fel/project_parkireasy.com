@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ramabhadra&display=swap');
+
+body{
+    font-family: 'Ramabhadra', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+  background-color: #222E50;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar img {
+  height: 56px;
+  margin-left: 12px;
+}
+
+.navbar li {
+  display: inline-block;
+  margin: 4px 20px 0;
+}
+
+.navbar a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.navbar ul.mobile-list {
+  display: none;
+}
+
+.mContainer {
+  margin: 0 32px;
+}
+
+.card-wrapper {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.swiper-slide {
+  width: 300px!important;
+}
+
+.swiper-pagination {
+  position: relative!important;
+}
+
+.card {
+  width: 300px;
+  height: 280px;
+  background-color: #222E50;
+  color: whitesmoke;
+  padding: 12px 12px 16px;
+  border-radius: 24px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.cardImg {
+  width: 280px;
+  height: 160px;
+  border: 2px dashed #FCCB06;
+  border-radius: 24px;
+}
+
+.cardImg .loc {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+}
+
+.cardContent h3 {
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.cardContent p {
+  margin: 0;
+  font-weight: 400;
+}
+
+.cardContent .price {
+  margin-top: 16px;
+  float: right;
+}
+
+.yTicket{
+  width: 400px;
+  height: 160px;
+  background-color: #222E50;
+  color: whitesmoke;
+  display: flex;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.yTicket p {
+  margin: 4px;
+}
+
+.yTicket .detail{
+  width: 60%;
+  padding-top: 24px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+.yTicket .qrImg {
+  margin: 24px 8px 4px 28px;
+  width: 132px;
+  height: 132px;
+}
+
+.yTicket .qrImg img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.booking {
+  display: flex;
+  gap: 0;
+  box-sizing: border-box;
+  font-family: 'Ramabhadra', sans-serif;
+  color: whitesmoke;
+}
+
+.logo-img {
+  margin-top: 40vh;
+  margin-left: 0;
+  height: 100%;
+  width: 40%;
+}
+
+.logo-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.book-form {
+  background-color: #222E50;  
+  display: block;
+  width: 100%;
+  padding: 20px;
+  margin-top: 24px;
+  padding-top: 80px;
+}
+
+.parking-spot {
+  background-color: #222E50; 
+  padding: 20px;
+  margin-top: 24px;
+  width: 100%;
+}
+
+.nav-spot {
+  padding: 4px 32px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-loc {
+  background-color: #FCCB06;
+  width: 148px;
+  height: 40px;
+  border-radius: 24px;
+  border: 2px solid whitesmoke;
+  color: #222E50;
+  align-items: center;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+hr {
+  border: 2px dashed;
+}
+
+.park-section h2 {
+  margin: 0;
+  padding-left: 45%;
+}
+
+.p-Spot {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+  margin-top: 20px;
+  color: #222E50;
+  font-weight: 600;
+}
+
+.btnPark.booked {
+  background-color: #697186!important;
+}
+
+.btnPark {
+  width: 120px;
+  height: 40px;
+  padding-top: 16px;
+  position: relative;
+  background-color: #FCCB06;
+}
+
+.btnPark label, .btnPark input {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.btnPark input[type="radio"] {
+  opacity: 0.011;
+  z-index: 100;
+}
+
+.btnPark input[type="radio"]:checked + label {
+  background: #be9801;
+  border-radius: 4px;
+}
+
+.btnPark label {
+  cursor: pointer;
+  z-index: 90;
+  line-height: 1.8em;
+  padding-left: 40px;
+}
+
+.book-form i {
+  color: #FCCB06;
+  margin-right: 12px;
+}
+
+input[type=text], input[type=date], input[type=time], input[type=password],
+select, textarea {
+  width: 90%;
+  padding: 12px;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit], .btnSubmit {
+  background-color: #FCCB06;
+  color: #222E50;
+  font-weight: 600;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover, .btnSubmit:hover{
+  background-color: #be9801;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.book-form .form-title {
+  text-align: center;
+}
+
+.book-form .form-title h1 {
+  margin: 0;
+}
+
+.book-form .form-title h4 {
+  margin: 0 0 80px;
+  
+}
+
+@media screen and (max-width: 1000px) {
+  .logo-img {
+    display: none;
+  }
+
+  .col-25 {
+    float: left;
+    width: 35%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 65%;
+    margin-top: 6px;
+  }
+  
+  .booking .book-form {
+    padding-top: 16px;
+  }
+
+  .p-Spot {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+
+@media screen and (max-width: 720px) {
+  .navbar .desktop-list {display: none;}
+  .navbar ul.mobile-list {
+    display: block;
+    background-color: #222E50;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    color:#FCCB06;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 28px;
+    margin: 0;
+    padding-left: 0;
+  }
+
+  .navbar ul.mobile-list a {
+    color: #FCCB06;
+  }
+
+  .mContainer {
+    margin: 0 20px;
+  }
+
+  .swiper-slide {
+    width: 400px!important;
+    
+  }
+
+  .card {
+    max-width: 400px;
+    height: 180px;
+    display: flex;
+    background-color: #222E50;
+    color: whitesmoke;
+    padding: 12px 12px 16px;
+    border-radius: 24px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .cardImg {
+    margin: auto;
+    width: 120px;
+    height: 120px;
+    border: 2px dashed #FCCB06;
+    border-radius: 24px;
+  }
+  
+  .cardImg .loc {
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+  }
+  
+  .cardContent h3 {
+    margin-bottom: 0;
+    font-weight: 600;
+  }
+  
+  .cardContent p {
+    display: flex;
+    font-weight: 400;
+  }
+  
+  .cardContent .price {
+    margin-top: 16px;
+    float: right;
+  }
+
+  .col-25, .col-75, input[type=submit], .btnSubmit {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .booking .logo-img {
+    display: none;
+  }
+
+  .p-Spot {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .p-Spot {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

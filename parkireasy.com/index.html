@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParkirEasy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="/asset/logo.png" alt="ParkirEasy">
+        </div>
+        <ul class="desktop-list">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="#">Location</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="/loginPage.html">Login/Signup</a></li>
+        </ul>
+        <ul class="mobile-list">
+            <li><i class="fa fa-home" ><a href="/index.html"></a></i></li>
+            <li><i class="fa fa-location-dot"></i></li>
+            <li><i class="fa fa-clock" ></i></li>
+            <li><i class="fa fa-user-gear"></i></li>
+            <li><i class="fa fa-user"></i></li>
+        </ul>
+    </nav>
+
+    <div class="mContainer">
+        <div>
+            <h2>Your Ticket</h2>
+            <div>
+                <div class="yTicket">
+                    
+                    <div class="detail">
+                        <p>Place: Mall Taman Anggrek</p>
+                        <p>Date: 26 october 2024</p>
+                        <p>Time: 16:00 - 17:00</p>
+                        <p>Spot: A1</p>
+                    </div>
+
+                    <div class="qrImg">
+                        <img src="/asset/qr.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="home-ticket">
+            <div>
+                <h2>Nearby Location</h2>
+            </div>
+
+            <div class="swiper mySwiper slide-container">
+                <div class="swiper-wrapper card-wrapper">
+                    <div class="swiper-slide">
+                        <a href="/detail-MTA.html">
+                            <div class="card">
+                                <div class="cardImg">              
+                                    <img src="/asset/mall taman anggrek.png" class="loc" alt=""> 
+                                </div>
+                                <div class="cardContent">
+                                    <h3>Mall Taman Anggrek</h3>
+                                    <p>Letjen S. Parman St No.Kavling 21</p>
+                                    <p class="price">Rp 4.000/hrs</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="cardImg">              
+                                <img src="/asset/central-park.jpg" class="loc" alt=""> 
+                            </div>
+        
+                            <div class="cardContent">
+                                <h3>Central Park Mall</h3>
+                                <p>Letjen S. Parman St No.Kavling 28</p>
+                                <p class="price">Rp 4.000/hrs</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="/detail-MTA.html">
+                            <div class="card">
+                                <div class="cardImg">              
+                                    <img src="/asset/mall taman anggrek.png" class="loc" alt=""> 
+                                </div>
+                                <div class="cardContent">
+                                    <h3>Mall Taman Anggrek</h3>
+                                    <p>Letjen S. Parman St No.Kavling 21</p>
+                                    <p class="price">Rp 4.000/hrs</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="cardImg">              
+                                <img src="/asset/central-park.jpg" class="loc" alt=""> 
+                            </div>
+        
+                            <div class="cardContent">
+                                <h3>Central Park Mall</h3>
+                                <p>Letjen S. Parman St No.Kavling 28</p>
+                                <p class="price">Rp 4.000/hrs</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="cardImg">              
+                                <img src="/asset/mall taman anggrek.png" class="loc" alt=""> 
+                            </div>
+                            <div class="cardContent">
+                                <h3>Mall Taman Anggrek</h3>
+                                <p>Letjen S. Parman St No.Kavling 21</p>
+                                <p class="price">Rp 4.000/hrs</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="cardImg">              
+                                <img src="/asset/central-park.jpg" class="loc" alt=""> 
+                            </div>
+        
+                            <div class="cardContent">
+                                <h3>Central Park Mall</h3>
+                                <p>Letjen S. Parman St No.Kavling 28</p>
+                                <p class="price">Rp 4.000/hrs</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                
+            </div>
+            
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        slidesPerGroup: 1,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoint: {
+        600:{
+            slidesPerView: 2,
+            spaceBetween: 40,
+            slidesPerGroup: 2,
+        },
+        1120: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+            slidesPerGroup: 3,
+        }
+        },
+      keyboard: true,
+    });
+    </script>
+</body>
+</html>
